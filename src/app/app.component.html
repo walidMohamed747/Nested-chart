@@ -1,0 +1,10 @@
+<div class="card">
+    <p-organizationChart [value]="finshdHierarchy" selectionMode="single" styleClass="company">
+        <ng-template let-node pTemplate="person">
+            <div class="node-header p-corner-top">{{node.name}}</div>
+            <div class="node-content">
+                <img src={{node.data.avatar}} width="32">
+            </div>
+        </ng-template>
+    </p-organizationChart>
+</div>
